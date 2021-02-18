@@ -24,6 +24,20 @@ function reverseInt(n) {
    Number("31-") => NaN
    parseInt("31-") => 31
    */
+
+	let reversed = n.toString().split("").reverse().join("");
+	reversed = parseInt(reversed);
+
+	if (n < 0) {
+		return reversed * -1;
+	}
+
+	return reversed;
+
+	/**
+	 * ? reserveInt Complexity Analysis
+	 Time Complexity: O(log N) If Input increases by factor of 10, we do one more operation
+	 */
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
