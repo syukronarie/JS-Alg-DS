@@ -20,6 +20,11 @@ function palindrome(str) {
 	// ultimate solutions
 	str = str.toLowerCase();
 	return str === str.split("").reverse().join("");
+
+	/*
+	Palindrome Complexity Analysis 
+  Time Complexity: O(N) We go over every character in Input String to reverse it.	
+	*/
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
