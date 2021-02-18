@@ -8,7 +8,7 @@ function reverse(str) {
 	// solution #1 using readable func
 	// return str.split("").reverse().join("");
 
-	// solution #2 using for loop
+	// solution #2 using for loops
 	// let res = "";
 	// for (let i = 0; i < str.length; i++) {
 	// let char = str[i]
