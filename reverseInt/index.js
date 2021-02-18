@@ -25,9 +25,11 @@ function reverseInt(n) {
    parseInt("31-") => 31
    */
 
+	// #1
 	let reversed = n.toString().split("").reverse().join("");
 	reversed = parseInt(reversed);
 
+	// #2
 	if (n < 0) {
 		return reversed * -1;
 	}
