@@ -24,6 +24,12 @@ function maxChar(str) {
 	console.log("maxCount", maxCount);
 
 	return maxChar;
+
+	/**
+	* * maxChar Complexity Analysis
+	Time Complexity: O(N) We visit every character in Input String
+	Space Complexity: O(1) Character Count Obj will have at most 26 key-val pairs
+	*/
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
