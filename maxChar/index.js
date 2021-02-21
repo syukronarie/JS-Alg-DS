@@ -19,9 +19,10 @@ function maxChar(str) {
 			maxCount = charCountObj[char];
 		}
 	}
-	console.log("charCountObj", charCountObj);
-	console.log("maxChar", maxChar);
-	console.log("maxCount", maxCount);
+
+	 // console.log("charCountObj", charCountObj);
+	 // console.log("maxChar", maxChar);
+	 // console.log("maxCount", maxCount);
 
 	return maxChar;
 
