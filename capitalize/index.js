@@ -26,6 +26,11 @@ function capitalize(str) {
 	}
 
 	return arrOfWordsCased.join(" ");
+
+	/**
+   * * capitalize Complexity Analyis
+   time complexity: o(n)
+   */
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
