@@ -16,6 +16,16 @@ function capitalize(str) {
       
   Turn the array of properly cased words back into a string with .join()
    */
+
+	const arrOfWords = str.split(" ");
+	const arrOfWordsCased = [];
+
+	for (let i = 0; i < arrOfWords.length; i++) {
+		const word = arrOfWords[i];
+		arrOfWordsCased.push(word[0].toUpperCase() + word.slice(1).toLowerCase());
+	}
+
+	return arrOfWordsCased.join(" ");
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
