@@ -18,6 +18,26 @@ function chunk(array, size) {
         Push Input Array Element into Last SubArray
    Return Result Array 
    */
+
+	let res = [];
+
+	for (let i = 0; i < array.length; i++) {
+		console.log(i);
+		const item = array[i];
+		const last = res[res.length - 1];
+		console.log(item);
+
+		if (!last || last.length === size) {
+			res.push([item]);
+			console.log("if", res);
+		} else {
+			last.push(item);
+		}
+	}
+
+	console.log(res);
+
+	return res;
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
