@@ -44,6 +44,11 @@ function fizzBuzz(n) {
 
 		console.log(str);
 	}
+
+	/**
+	 * * fizzbuzz Complexity Analysis
+	 * Time Complexity: O(N)
+	 */
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
