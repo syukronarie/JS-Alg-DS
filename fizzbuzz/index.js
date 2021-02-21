@@ -47,7 +47,7 @@ function fizzBuzz(n) {
 
 	/**
 	 * * fizzbuzz Complexity Analysis
-	 * Time Complexity: O(N)
+	 * Time Complexity: O(N
 	 */
 }
 

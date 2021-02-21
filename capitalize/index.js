@@ -5,7 +5,18 @@
 //   capitalize("I'm a little tea pot") --> 'I'm A Little Tea Pot'
 //   capitalize('sHoRt AnD sToUt') --> 'Short And Stout'
 
-function capitalize(str) {}
+function capitalize(str) {
+	/**
+   * * Capitalize Pseudocode
+   Split the String into an array of words using .split()
+   
+   Iterate thru above array, fill an empty array with properly cased word
+      You can use .slice() or .substring() to grab parts of a string
+      You cam use .toLowerCase() and .toUpperCase() to case a word
+      
+  Turn the array of properly cased words back into a string with .join()
+   */
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
@@ -34,12 +45,12 @@ mocha.setup("bdd");
 const { assert } = chai;
 
 describe("Capitalization", () => {
-  it("capitalizes the first letter of each word", () => {
-    assert.equal(capitalize("I'm a little tea pot"), "I'm A Little Tea Pot");
-  });
-  it("lowercases the rest of the word", () => {
-    assert.equal(capitalize("sHoRt AnD sToUt"), "Short And Stout");
-  });
+	it("capitalizes the first letter of each word", () => {
+		assert.equal(capitalize("I'm a little tea pot"), "I'm A Little Tea Pot");
+	});
+	it("lowercases the rest of the word", () => {
+		assert.equal(capitalize("sHoRt AnD sToUt"), "Short And Stout");
+	});
 });
 
 mocha.run();
