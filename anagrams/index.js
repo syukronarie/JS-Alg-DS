@@ -19,6 +19,33 @@ function anagrams(stringA, stringB) {
     Return false if number in Character Count is undefined or 0 
   Return true
    *  */
+
+	// Solution #1
+	stringA = stringA.toLowerCase().replace(/[\W_]+/g, "");
+	stringB = stringB.toLowerCase().replace(/[\W_]+/g, "");
+
+	if (stringA.length !== stringB.length) {
+		return false;
+	}
+
+	const stringACharCount = {};
+
+	for (let i = 0; i < stringA.length; i++) {
+		const aChar = stringA[i];
+		stringACharCount[aChar] = stringACharCount[aChar] + 1 || 1;
+	}
+
+	for (let i = 0; i < stringB.length; i++) {
+		const bChar = stringB[i];
+
+		if (!stringACharCount[bChar]) {
+			return false;
+		} else {
+			stringACharCount[bChar]--;
+		}
+	}
+
+	return true;
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
