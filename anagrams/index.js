@@ -61,6 +61,12 @@ function anagrams(stringA, stringB) {
 	const stringBSorted = stringB.split("").sort().join("");
 
 	return stringASorted === stringBSorted;
+
+	/**
+   * * Anagram Solution #2 Complexity Analysis 
+   Time Complexity: O(N * Log N) We made use of a Sorting Algorithm
+   Space Complexity: O(N) Sorted Strings as long as Input Strings
+   */
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
