@@ -47,6 +47,12 @@ function anagrams(stringA, stringB) {
 
 	// return true;
 
+	/**
+   * * Anagram Solution #1 Complexity Analysis 
+   Time Complexity: O(N + M) We go over every character in both Input Strings
+   Space Complexity: O(1) Character Count Object hat at most 26 key-val pairs
+   */
+
 	// Solution #2
 	stringA = stringA.toLowerCase().replace(/[\W_]+/g, "");
 	stringB = stringB.toLowerCase().replace(/[\W_]+/g, "");
