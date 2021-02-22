@@ -8,7 +8,18 @@
 //   anagrams('Heart!', 'EARTH') --> True
 //   anagrams('lol', 'lolc') --> False
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+	/**
+   * * Anagram Pseudocode
+   If input string do NOT have same length, return false immediately
+   Create a Character Count Object for one of the Input String
+    Use .replace() with a regular expressions so that only letter character remain
+    Use .toLowerCase() for case insensitifity
+  Loop through the other Input String, decrementing Character Count Object 
+    Return false if number in Character Count is undefined or 0 
+  Return true
+   *  */
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
@@ -37,25 +48,25 @@ mocha.setup("bdd");
 const { assert } = chai;
 
 describe("Anagrams", () => {
-  it("works if case sensitivity and non word characters NOT taken into account", () => {
-    assert.equal(anagrams("earth", "heart"), true);
+	it("works if case sensitivity and non word characters NOT taken into account", () => {
+		assert.equal(anagrams("earth", "heart"), true);
 
-    assert.equal(anagrams("love", "meow"), false);
-    assert.equal(anagrams("lol", "lolc"), false);
-  });
-  it("is case insensitive. 'HEART' and 'earth' should return true", () => {
-    assert.equal(anagrams("HEART", "earth"), true);
-    assert.equal(anagrams("heart", "EARTH"), true);
+		assert.equal(anagrams("love", "meow"), false);
+		assert.equal(anagrams("lol", "lolc"), false);
+	});
+	it("is case insensitive. 'HEART' and 'earth' should return true", () => {
+		assert.equal(anagrams("HEART", "earth"), true);
+		assert.equal(anagrams("heart", "EARTH"), true);
 
-    assert.equal(anagrams("love", "meow"), false);
-    assert.equal(anagrams("lol", "lolc"), false);
-  });
-  it("only matches word characters. 'heart!'' and '' earth' should return true", () => {
-    assert.equal(anagrams("heart!", " earth"), true);
+		assert.equal(anagrams("love", "meow"), false);
+		assert.equal(anagrams("lol", "lolc"), false);
+	});
+	it("only matches word characters. 'heart!'' and '' earth' should return true", () => {
+		assert.equal(anagrams("heart!", " earth"), true);
 
-    assert.equal(anagrams("love", "meow"), false);
-    assert.equal(anagrams("lol", "lolc"), false);
-  });
+		assert.equal(anagrams("love", "meow"), false);
+		assert.equal(anagrams("lol", "lolc"), false);
+	});
 });
 
 mocha.run();
