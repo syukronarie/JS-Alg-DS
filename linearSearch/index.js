@@ -40,7 +40,15 @@ function linearSearchIncludes(arr, val) {
 	return false;
 }
 
-function linearSearchFind(arr, cb) {}
+function linearSearchFind(arr, cb) {
+	for (let i = 0; i < arr.length; i++) {
+		if (cb(arr[i]) === true) {
+			return arr[i];
+		}
+	}
+
+	return undefined;
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
