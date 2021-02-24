@@ -6,6 +6,14 @@
 // linearSearchIncludes(foods, "pizza") --> true
 // linearSearchFind(foods, food => food === "pizza") --> "pizza"
 
+/** 
+* ? What is Linear Search?
+A Searching Algorithm that searches by manually checking everything in the data set 
+to see if it is the value we are searching for
+
+If finds what we are searching for by brute force, making it easy to implement
+*/
+
 function linearSearchIndexOf(arr, val) {}
 
 function linearSearchIncludes(arr, val) {}
@@ -42,38 +50,38 @@ const foods = ["pizza", "orange", "yogurt"];
 const people = [{ name: "Kevin", last: "Nguyen", born: 1995 }];
 
 describe("linearSearchIndexOf()", () => {
-  it("returns index of found item", () => {
-    assert.equal(linearSearchIndexOf(foods, "pizza"), 0);
-    assert.equal(linearSearchIndexOf(foods, "yogurt"), 2);
-  });
-  it("returns -1 if item not found", () => {
-    assert.equal(linearSearchIndexOf(foods, "laptop"), -1);
-  });
+	it("returns index of found item", () => {
+		assert.equal(linearSearchIndexOf(foods, "pizza"), 0);
+		assert.equal(linearSearchIndexOf(foods, "yogurt"), 2);
+	});
+	it("returns -1 if item not found", () => {
+		assert.equal(linearSearchIndexOf(foods, "laptop"), -1);
+	});
 });
 
 describe.skip("linearSearchIncludes()", () => {
-  it("returns true if item found", () => {
-    assert.equal(linearSearchIncludes(foods, "pizza"), true);
-  });
-  it("returns false if item NOT found", () => {
-    assert.equal(linearSearchIncludes(foods, "laptop"), false);
-  });
+	it("returns true if item found", () => {
+		assert.equal(linearSearchIncludes(foods, "pizza"), true);
+	});
+	it("returns false if item NOT found", () => {
+		assert.equal(linearSearchIncludes(foods, "laptop"), false);
+	});
 });
 
 describe.skip("linearSearchFind()", () => {
-  it("returns item back if found", () => {
-    const kevin = people[0];
-    assert.equal(
-      linearSearchFind(people, person => person.name === "Kevin"),
-      kevin
-    );
-  });
-  it("returns undefined if item NOT found", () => {
-    assert.equal(
-      linearSearchFind(people, person => person.name === "Kevinn"),
-      undefined
-    );
-  });
+	it("returns item back if found", () => {
+		const kevin = people[0];
+		assert.equal(
+			linearSearchFind(people, (person) => person.name === "Kevin"),
+			kevin
+		);
+	});
+	it("returns undefined if item NOT found", () => {
+		assert.equal(
+			linearSearchFind(people, (person) => person.name === "Kevinn"),
+			undefined
+		);
+	});
 });
 
 mocha.run();
