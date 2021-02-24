@@ -7,7 +7,25 @@
 //   vowels('aEiOu') --> 5
 //   vowels('I am a world-class developer using iterations') --> 16
 
-function vowels(str) {}
+function vowels(str) {
+	str = str.toLowerCase();
+	let vowels = "aiueo".split("");
+	let count = 0;
+
+	for (let i = 0; i < str.length; i++) {
+		const char = str[i];
+
+		for (let j = 0; j < vowels.length; j++) {
+			const vowel = vowels[j];
+
+			if (char === vowel) {
+				count++;
+			}
+		}
+	}
+
+	return count;
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
@@ -36,14 +54,14 @@ mocha.setup("bdd");
 const { assert } = chai;
 
 describe("Vowels", () => {
-  it("gets correct vowel count", () => {
-    assert.equal(vowels("What"), 1);
-    assert.equal(vowels("Why"), 0);
-  });
-  it("is case insensitive. vowels('aEiOu') should return 5", () => {
-    assert.equal(vowels("aEiOu"), 5);
-    assert.equal(vowels("I am a world-class developer using iterations"), 16);
-  });
+	it("gets correct vowel count", () => {
+		assert.equal(vowels("What"), 1);
+		assert.equal(vowels("Why"), 0);
+	});
+	it("is case insensitive. vowels('aEiOu') should return 5", () => {
+		assert.equal(vowels("aEiOu"), 5);
+		assert.equal(vowels("I am a world-class developer using iterations"), 16);
+	});
 });
 
 mocha.run();
