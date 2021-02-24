@@ -13,6 +13,13 @@ to see if it is the value we are searching for.
 If finds what we are searching for by brute force, making it easy to implement.
 */
 
+/**
+ * * Linear Search Pseudocode 
+ Loop thru an Array...
+ 
+ Do not use built Array methods like .includes(), .indexOf(), etc as there already use Linear Search behind the scenes.
+ */
+
 function linearSearchIndexOf(arr, val) {}
 
 function linearSearchIncludes(arr, val) {}
