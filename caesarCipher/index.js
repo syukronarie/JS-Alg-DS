@@ -26,6 +26,12 @@ function caesarCipher(str, shift) {
 	}
 
 	return res;
+
+	/**
+     * * caesarCipher Complexity Analysis
+     Time Complexity: O(N) We must visit all characters in Input String to encode it
+     Space Complexity: O(N) Result string as long as Input String
+     */
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
