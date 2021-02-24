@@ -20,7 +20,15 @@ If finds what we are searching for by brute force, making it easy to implement.
  Do not use built Array methods like .includes(), .indexOf(), etc as there already use Linear Search behind the scenes.
  */
 
-function linearSearchIndexOf(arr, val) {}
+function linearSearchIndexOf(arr, val) {
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] === val) {
+			return i;
+		}
+	}
+
+	return -1;
+}
 
 function linearSearchIncludes(arr, val) {}
 
