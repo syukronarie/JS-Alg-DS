@@ -20,6 +20,11 @@ function pyramid(n) {
 
 		console.log(padding + hashes + padding);
 	}
+
+	/**
+   * * Pyramid Complexity Analysis
+   Time Complexity: O(N^ 2) Outer loop runs N times, Inner loop runs roughly N times
+   */
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
