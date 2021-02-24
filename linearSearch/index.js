@@ -9,9 +9,8 @@
 /** 
 * ? What is Linear Search?
 A Searching Algorithm that searches by manually checking everything in the data set 
-to see if it is the value we are searching for
-
-If finds what we are searching for by brute force, making it easy to implement
+to see if it is the value we are searching for.
+If finds what we are searching for by brute force, making it easy to implement.
 */
 
 function linearSearchIndexOf(arr, val) {}
