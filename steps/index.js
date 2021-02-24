@@ -41,6 +41,11 @@ function steps(n) {
 
 		console.log(step);
 	}
+
+	/** 
+	* * Steps Complexity Analysis
+	Time Complexity: O(N^2) Both Inner and Outer For Loops run N times
+	*/
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
