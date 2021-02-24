@@ -25,6 +25,12 @@ function vowels(str) {
 	}
 
 	return count;
+
+	/**
+   * * Vowels Complexity Analysis
+   Time Complexity: O(N) All characters of input String must be checked to see if it is a vowel 
+   Space COmplexity: O(1)
+   */
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
