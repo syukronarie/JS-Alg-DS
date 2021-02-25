@@ -10,6 +10,32 @@
 Binary Search only works on SORTED Arrays, and is able to search that array much faster than Linear Search due to the presort. 
  */
 
+/**
+ * ! Example
+ // Using Linear Search
+ I'm thinking of a # from 1 to 100 (Answer 1)
+    Is it the number 100? => "NO"
+    Is it the number 99? => "NO"
+    Is it the number 98? => "NO"
+    Is it the number 97? => "NO"
+    Is it the number 96? => "NO"
+    Is it the number 95? => "NO"
+               ...
+ 100 "Operations" / Guesses (Worst Case)
+ 
+ // Using Binary Search
+ I'm thinking of a # from 1 to 100 (Answer 1)
+   Is it the number 50? => "No it is less than that"
+   Is it the number 25? => "No it is less than that"
+   Is it the number 12? => "No it is less than that"
+   Is it the number 6? => "No it is less than that"
+   Is it the number 3? => "No it is less than that"
+   Is it the number 2? => "No it is less than that"
+      Is it the number 1? => "YES!"
+              ...
+ 7 "Operations" / Guesses (Worst Case)
+ */
+
 const binarySearch = (sortedArr, value) => {};
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
