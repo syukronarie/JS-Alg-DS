@@ -40,6 +40,11 @@ Binary Search only works on SORTED Arrays, and is able to search that array much
  * * BINARY SEARCH COMPLEXITY ANALYSIS
  Binary Search can achieve O(log n) Time Complexity by eliminating HALF of the remaining things 
  to search for with each search.
+ 
+ * * Time Complexity of Binary Search  O(log N)
+ if N is doubled, we only have to do one more operation.
+ This is because with each operation, we can eliminate half of remaining array.
+ * ! Binary Search only works on Sorted Arrays.
  */
 
 /**
