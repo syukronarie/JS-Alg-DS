@@ -42,6 +42,20 @@ Binary Search only works on SORTED Arrays, and is able to search that array much
  to search for with each search.
  */
 
+/**
+ * * Binary Search Pseudocode
+ Create a left pointer index, that starts at 0
+ Create a right pointer index that starts at length of array - 1
+ 
+ While LP is less than or equal to RP
+    Calculate middle index (round up or down), and then middle value 
+    If middle value is equal to value, return middle index
+    If middle value too small, move left pointer up
+    If middle value too large, move right pointer down
+    
+Return -1 (since value never found in while loop)
+ */
+
 const binarySearch = (sortedArr, value) => {};
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
