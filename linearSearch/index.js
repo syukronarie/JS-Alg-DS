@@ -20,40 +20,48 @@ If finds what we are searching for by brute force, making it easy to implement.
  Do not use built Array methods like .includes(), .indexOf(), etc as there already use Linear Search behind the scenes.
  */
 
+/**
+* * Linear Search Complexity Analysis
+Time Complexity: O(N)
+
+Our Search Algorithm in the worst case needs to iterate over EVERY item in Array 
+to check if it is the value we are looking for.
+*/
+
 function linearSearchIndexOf(arr, val) {
-	// for (let i = 0; i < arr.length; i++) {
-	// 	if (arr[i] === val) {
-	// 		return i;
-	// 	}
-	// }
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] === val) {
+			return i;
+		}
+	}
 
-	// return -1;
+	return -1;
 
-	return arr.indexOf(val);
+	// return arr.indexOf(val);
 }
 
 function linearSearchIncludes(arr, val) {
-	// for (let i = 0; i < arr.length; i++) {
-	// 	if (arr[i] === val) {
-	// 		return true;
-	// 	}
-	// }
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] === val) {
+			return true;
+		}
+	}
 
-	// return false;
+	return false;
 
-	return arr.includes(val);
+	// return arr.includes(val);
 }
 
 function linearSearchFind(arr, cb) {
-	// for (let i = 0; i < arr.length; i++) {
-	// 	if (cb(arr[i]) === true) {
-	// 		return arr[i];
-	// 	}
-	// }
+	for (let i = 0; i < arr.length; i++) {
+		if (cb(arr[i]) === true) {
+			return arr[i];
+		}
+	}
 
-	// return undefined;
+	return undefined;
 
-	return arr.find(cb);
+	// return arr.find(cb);
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
