@@ -2,6 +2,14 @@
 // for the provided value.
 // The Binary Search Algorithm will return the index of value found, or -1 if not found.
 
+/**
+ * ? What is Binary Search?
+ It is a Searching Algorithm that can search in O(log n) time for a sorted array,
+ compared to Linear Search's O(n) time for unsorted array.
+ 
+Binary Search only works on SORTED Arrays, and is able to search that array much faster than Linear Search due to the presort. 
+ */
+
 const binarySearch = (sortedArr, value) => {};
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
@@ -33,17 +41,17 @@ const { assert } = chai;
 const sortedNumsArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 describe("binarySearch()", () => {
-  it("returns correct index on sortedArray with just one number", () => {
-    assert.equal(binarySearch([5], 5), 0);
-    assert.equal(binarySearch([15], 5), -1);
-  });
-  it("works on sorted array with 10 numbers", () => {
-    assert.equal(binarySearch(sortedNumsArray, 10), 10);
-    assert.equal(binarySearch(sortedNumsArray, 0), 0);
-    assert.equal(binarySearch(sortedNumsArray, 5), 5);
-    assert.equal(binarySearch(sortedNumsArray, 7), 7);
-    assert.equal(binarySearch(sortedNumsArray, 1337), -1);
-  });
+	it("returns correct index on sortedArray with just one number", () => {
+		assert.equal(binarySearch([5], 5), 0);
+		assert.equal(binarySearch([15], 5), -1);
+	});
+	it("works on sorted array with 10 numbers", () => {
+		assert.equal(binarySearch(sortedNumsArray, 10), 10);
+		assert.equal(binarySearch(sortedNumsArray, 0), 0);
+		assert.equal(binarySearch(sortedNumsArray, 5), 5);
+		assert.equal(binarySearch(sortedNumsArray, 7), 7);
+		assert.equal(binarySearch(sortedNumsArray, 1337), -1);
+	});
 });
 
 mocha.run();
