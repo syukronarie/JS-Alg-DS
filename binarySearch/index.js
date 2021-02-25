@@ -56,7 +56,25 @@ Binary Search only works on SORTED Arrays, and is able to search that array much
 Return -1 (since value never found in while loop)
  */
 
-const binarySearch = (sortedArr, value) => {};
+const binarySearch = (sortedArr, value) => {
+	let left = 0;
+	let right = sortedArr.length - 1;
+
+	while (left <= right) {
+		const mid = Math.floor((left + right) / 2);
+		const midVal = sortedArr[mid];
+
+		if (midVal === value) {
+			return mid;
+		} else if (midVal < value) {
+			left = mid + 1;
+		} else {
+			right = mid - 1;
+		}
+	}
+
+	return -1;
+};
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
