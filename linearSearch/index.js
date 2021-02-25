@@ -26,6 +26,9 @@ Time Complexity: O(N)
 
 Our Search Algorithm in the worst case needs to iterate over EVERY item in Array 
 to check if it is the value we are looking for.
+
+O(N) / Linear Time Complexity is best we can do for searching UNSORTED array.
+On a SORTED array we can get a much better time complexity with Binary Search.
 */
 
 function linearSearchIndexOf(arr, val) {
