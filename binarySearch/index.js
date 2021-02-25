@@ -36,6 +36,12 @@ Binary Search only works on SORTED Arrays, and is able to search that array much
  7 "Operations" / Guesses (Worst Case)
  */
 
+/**
+ * * BINARY SEARCH COMPLEXITY ANALYSIS
+ Binary Search can achieve O(log n) Time Complexity by eliminating HALF of the remaining things 
+ to search for with each search.
+ */
+
 const binarySearch = (sortedArr, value) => {};
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
