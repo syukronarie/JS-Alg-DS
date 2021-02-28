@@ -21,6 +21,12 @@ function stringPatternSearch(text, pattern) {
 	}
 
 	return count;
+
+	/**
+   * * String Pattern Search Complexity Analysis
+   Time Complexity: O(N * M) For each character in text, go over every character in Pattern. 
+   Space Complexity: O(1)
+   */
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
